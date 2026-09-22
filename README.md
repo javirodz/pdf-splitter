@@ -26,8 +26,8 @@ Tested with Python 3.11, pikepdf 10.5, pypdf 3.17 and Ghostscript 10.02.
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/javirodz/pdf-splitter.git
+cd pdf-splitter
 pip install pikepdf pypdf
 ```
 
@@ -169,7 +169,3 @@ Ghostscript font subsetting is the slowest step. Use `--no-gs` when speed matter
 - The PDF must have bookmarks. Scanned PDFs or PDFs without an outline cannot be split with this tool.
 - Topics that share a page both contain that full page. The script works at page level and does not crop content within a page.
 - Section boundaries rely on the page and position stored in each bookmark. If the bookmarks in the source PDF are wrong, the split will be wrong too.
-
-## License
-
-Add a license of your choice (for example MIT) in a `LICENSE` file.
